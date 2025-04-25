@@ -6,12 +6,12 @@
 
 ## [MapleCool](https://github.com/pmkol)的OpenWrt插件仓库使用说明
 * 该插件库适用于OpenWrt23.05版本，其他版本请自行测试。
-* 插件库自动跟随各大佬更新，需自行添加编译
+* 插件库自动跟随各大佬更新，需自行添加编译。
 
 ---
 # 使用
 
-一键命令
+一键命令（防止插件冲突，删除重复）
 
 ```yaml
 sed -i '1i src-git MapleCool https://github.com/pmkol/openwrt-feeds/tree/extd-23.05' feeds.conf.default
@@ -38,7 +38,7 @@ git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/l
 ```
 
 ---
-## 一键命令
+## 一键命令（包含删除重复插件和更新go版本）
 
 ```yaml
 sed -i '1i src-git MapleCool https://github.com/pmkol/openwrt-feeds/tree/extd-23.05' feeds.conf.default
@@ -60,5 +60,7 @@ make menuconfig
 快快加入tg群围观
 
 [DNS交流群](https://t.me/+VeV5wt1E6FA5Ue-x)
+
 MapleCool的[博客](https://apad.pro/)
+
 MapleCool的[openwrt-lite](https://github.com/pmkol/openwrt-lite)项目
