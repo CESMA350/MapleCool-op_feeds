@@ -13,7 +13,7 @@
 一键命令(防止插件冲突，删除重复)
 
 ```yaml
-sed -i '1i src-git proxy https://github.com/pmkol/openwrt-feeds/tree/lite-23.05' feeds.conf.default
+sed -i '1i src-git proxy https://github.com/pmkol/openwrt-feeds.git;lite-23.05' feeds.conf.default
 ./scripts/feeds update -a
 rm -rf feeds/packages/net/{xray*,v2ray*,v2ray*,sing*}
 ./scripts/feeds install -a 
@@ -37,8 +37,8 @@ git clone https://github.com/sbwml/packages_lang_golang -b 23.x feeds/packages/l
 ## 一键命令(包含常用和代理插件，并删除重复插件与更新go版本)
 
 ```yaml
-sed -i '1i src-git MapleCool https://github.com/pmkol/openwrt-feeds/tree/extd-23.05' feeds.conf.default
-sed -i '2i src-git proxy https://github.com/pmkol/openwrt-feeds/tree/lite-23.05' feeds.conf.default
+sed -i '1i src-git MapleCool https://github.com/pmkol/openwrt-feeds.git;extd-23.05' feeds.conf.default
+sed -i '2i src-git proxy https://github.com/pmkol/openwrt-feeds.git;lite-23.05' feeds.conf.default
 ./scripts/feeds update -a
 rm -rf feeds/luci/applications/luci-app-adguardhome
 rm -rf feeds/luci/applications/luci-app-smartdns
