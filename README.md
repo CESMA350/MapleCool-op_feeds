@@ -5,7 +5,7 @@
 一键命令（防止插件冲突，删除重复）
 
 ```yaml
-sed -i '1i src-git MapleCool https://github.com/pmkol/openwrt-feeds/tree/extd-23.05' feeds.conf.default
+sed -i '1i src-git MapleCool https://github.com/pmkol/openwrt-feeds/tree/extd-23.05#' feeds.conf.default
 ./scripts/feeds update -a
 rm -rf feeds/luci/applications/luci-app-adguardhome
 rm -rf feeds/luci/applications/luci-app-smartdns
