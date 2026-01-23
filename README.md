@@ -40,7 +40,7 @@ git clone https://github.com/sbwml/packages_lang_golang -b 25.x feeds/packages/l
 ## 一键命令（包含删除重复插件和更新go版本）
 
 ```yaml
-sed -i '1i src-git MapleCool https://github.com/pmkol/openwrt-feeds/tree/extd-23.05' feeds.conf.default
+sed -i '1i src-git MapleCool https://github.com/pmkol/openwrt-feeds/tree/extd-23.05#' feeds.conf.default
 ./scripts/feeds update -a
 rm -rf feeds/luci/applications/luci-app-adguardhome
 rm -rf feeds/luci/applications/luci-app-smartdns
